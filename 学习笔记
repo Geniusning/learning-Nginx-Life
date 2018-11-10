@@ -1,0 +1,11 @@
+# git学习
+## git新建空的远程仓库怎么和本地已有项目仓库关联起来
+>首先我们在GitHub上创建一个新的仓库
+>特别注意，当我们勾选Initialize this ....这个选项时，在关联本地仓库时需要首先执行git pull 不然会导致错误
+>然后找到我们本地项目的目录
+>利用git任务管理器进入当前的文件夹目录
+>然后输入git init 初始化本地文件，使其成为git管理的文件
+>然后我们来添加gitignore来忽略掉提交的文件  输入 touch .gitignore
+>然后我们来进行git add 和 git commit 操作  之后建立远程仓库和本地仓库的连接，运行如下命令
+>git remote add origin https://github.com/darenone/miniProductionLine.git
+>这里特别注意，我们第一次push的时候,加上-u参数,Git就会把本地的master分支和远程的master分支进行关联起来,我们以后的push操作就不再需要加上-u参数了

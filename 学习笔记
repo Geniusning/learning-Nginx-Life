@@ -9,3 +9,8 @@
 >然后我们来进行git add 和 git commit 操作  之后建立远程仓库和本地仓库的连接，运行如下命令
 >git remote add origin https://github.com/darenone/miniProductionLine.git
 >这里特别注意，我们第一次push的时候,加上-u参数,Git就会把本地的master分支和远程的master分支进行关联起来,我们以后的push操作就不再需要加上-u参数了
+
+
+关于npm权限问题
+>这两天执行npm i webpack -g 时，cmd老是报 Error: EPERM: operation not permitted, mkdir 'C:\Program Files\nodejs\node_global\node_modules'错误
+一开始以为是权限问题，后来Google  发现以下方法可以使用：需要删除npmrc文件 （是在C:\Users\{账户}\下的.npmrc文件..）
